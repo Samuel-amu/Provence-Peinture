@@ -1,68 +1,132 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explorez les vies et œuvres des peintres célèbres de la Provence.">
-    <title> Les Peintres de Provence</title>
-    <link rel="stylesheet" href="css/global.css">
+    <title>Les Peintres de Provence</title>
+    <meta name="description" content="Découvrez les peintres emblématiques de la Provence.">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+
+    <meta property="og:title" content="Les Peintres de Provence">
+    <meta property="og:description" content="Découvrez les peintres emblématiques de la Provence.">
+    <meta property="og:image" content="https://samuel-amu.github.io/Provence-Peinture/images/logo.png">
+    <meta property="og:url" content="https://samuel-amu.github.io/Provence-Peinture/html/peintres.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/peintres.css">
 </head>
 
-<body>
+<body id="top">
+
     <header>
-        <h1>Les Peintres de Provence</h1>
-        <p>Découvrez les artistes emblématiques dont l'œuvre a été façonnée par la lumière et les paysages provençaux.</p>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="../images/logo.png" alt="Logo Provence" class="logo-img">
+                <span>Provence & Peinture</span>
+            </div>
+            <button id="theme-toggle" class="btn">🌙</button>
+            <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="peintres.html" class="active">Peintres</a></li>
+                <li><a href="styles.html">Styles</a></li>
+                <li><a href="lieux.html">Lieux</a></li>
+                <li><a href="video.html">Vidéo</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Paul Cézanne -->
-    <div class="painter-card">
-        <img src="https://duckduckgo.com/i/6c7508f320f5e52e.jpg" alt="Paul Cézanne">
-        <h2>Paul Cézanne</h2>
-        <p>Natif d'Aix-en-Provence, le "père de l'art moderne" a inlassablement peint la Montagne Sainte-Victoire,
-            capturant l'essence même de la Provence.</p>
-        <button type="button">En savoir plus</button>
-    </div>
+    <main>
 
-    <!-- Vincent Van Gogh -->
-    <div class="painter-card">
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fliteraryfictions.files.wordpress.com%2F2023%2F01%2Fvincent-van-gogh.jpg%3Fw%3D775&f=1&nofb=1&ipt=4941de78f5f9448af6cfaedbb633dc47a02a14c31475ae14cd7110f46d644c7b" alt="Vincent van Gogh">
-        <h2>Vincent van Gogh</h2>
-        <p>Durant son séjour intense à Arles, la lumière provençale a bouleversé sa palette, donnant naissance à des
-            chefs-d'œuvre comme "La Nuit étoilée".</p>
-        <button type="button">En savoir plus</button>
-    </div>
+        <section>
+            <h1>Les Peintres de Provence</h1>
+            <p>Découvrez les artistes emblématiques dont l'œuvre a été façonnée par la lumière et les paysages provençaux.</p>
+        </section>
 
-    <!-- Henri Matisse -->
-    <div class="painter-card">
-        <img src="https://duckduckgo.com/i/98e077dd5a491db0.jpg" alt="Henri Matisse">
-        <h2>Henri Matisse</h2>
-        <p>Installé sur la Côte d'Azur (Nice, Vence), il a puisé dans la lumière méditerranéenne une inspiration
-            nouvelle pour ses couleurs pures et ses formes découpées.</p>
-        <button type="button">En savoir plus</button>
-    </div>
+        <div class="gallery-grid">
 
-    <!-- Pablo Picasso -->
-    <div class="painter-card">
-        <img src="https://duckduckgo.com/i/11632cc8e6525710.jpg" alt="Pablo Picasso">
-        <h2>Pablo Picasso</h2>
-        <p> Il a passé de nombreuses années dans le sud (Antibes, Vallauris, Mougins), où son art s'est enrichi de la
-            céramique et des paysages de l'arrière-pays.</p>
-        <button type="button">En savoir plus</button>
-    </div>
+            <!-- Paul Cézanne -->
+            <article class="card" id="cezanne">
+                <div class="card-img">
+                    <img src="https://github.com/user-attachments/assets/892b1130-a57d-4ca0-982b-b037a4447894" alt="Paul Cézanne" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h2>Paul Cézanne</h2>
+                    <p>Natif d'Aix-en-Provence, le "père de l'art moderne" a inlassablement peint la Montagne Sainte-Victoire, capturant l'essence même de la Provence.</p>
+                    <a href="https://fr.wikipedia.org/wiki/Paul_C%C3%A9zanne" target="_blank" rel="noopener noreferrer" class="btn">En savoir plus</a>
+                </div>
+            </article>
 
-    <!-- Paul Signac -->
-    <div class="painter-card">
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flive.staticflickr.com%2F65535%2F51826144767_1e1444d001.jpg&f=1&nofb=1&ipt=33229ba584ee2cfc1e0bfd3bb7104a134ff00fb7884dee3037a00c1f117b650b" alt="Paul Signac">
-        <h2>Paul Signac</h2>
-        <p> Navigateur et pionnier du pointillisme, il "découvre" Saint-Tropez en 1892. La lumière du port a inspiré
-            certaines de ses toiles les plus célèbres.</p>
-        <button type="button">En savoir plus</button>
-    </div>
+            <!-- Vincent Van Gogh -->
+            <article class="card">
+                <div class="card-img">
+                    <img src="https://github.com/user-attachments/assets/a8cefb5f-6f47-4cc0-a935-3fd44e82593d" alt="Vincent van Gogh" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h2>Vincent van Gogh</h2>
+                    <p>Durant son séjour intense à Arles, la lumière provençale a bouleversé sa palette, donnant naissance à des chefs-d'œuvre comme "La Nuit étoilée".</p>
+                    <a href="https://fr.wikipedia.org/wiki/Vincent_van_Gogh" target="_blank" rel="noopener noreferrer" class="btn">En savoir plus</a>
+                </div>
+            </article>
+
+            <!-- Henri Matisse -->
+            <article class="card" id="matisse">
+                <div class="card-img">
+                    <img src="https://github.com/user-attachments/assets/4e768bb2-90a5-4a37-9440-d925720abe77" alt="Henri Matisse" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h2>Henri Matisse</h2>
+                    <p>Installé sur la Côte d'Azur (Nice, Vence), il a puisé dans la lumière méditerranéenne une inspiration nouvelle pour ses couleurs pures et ses formes découpées.</p>
+                    <a href="https://fr.wikipedia.org/wiki/Henri_Matisse" target="_blank" rel="noopener noreferrer" class="btn">En savoir plus</a>
+                </div>
+            </article>
+
+            <!-- Pablo Picasso -->
+            <article class="card">
+                <div class="card-img">
+                    <img src="https://github.com/user-attachments/assets/eafa8c93-2bc0-4a2c-a213-e0a387188e26" alt="Pablo Picasso" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h2>Pablo Picasso</h2>
+                    <p>Il a passé de nombreuses années dans le sud (Antibes, Vallauris), où son art s'est enrichi de la céramique et des paysages de l'arrière-pays.</p>
+                    <a href="https://fr.wikipedia.org/wiki/Pablo_Picasso" target="_blank" rel="noopener noreferrer" class="btn">En savoir plus</a>
+                </div>
+            </article>
+
+            <!-- Paul Signac -->
+            <article class="card">
+                <div class="card-img">
+                    <img src="https://github.com/user-attachments/assets/f5f0e534-a5f9-4503-9f2f-768ae4d76a8b" alt="Paul Signac" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h2>Paul Signac</h2>
+                    <p>Navigateur et pionnier du pointillisme, il "découvre" Saint-Tropez en 1892. La lumière du port a inspiré certaines de ses toiles célèbres.</p>
+                    <a href="https://fr.wikipedia.org/wiki/Paul_Signac" target="_blank" rel="noopener noreferrer" class="btn">En savoir plus</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
 
     <footer>
         <p>Projet de BUT Informatique - Les Peintures Provençales</p>
+        <address>
+            <strong>Académie d'Aix-Marseille</strong><br>
+            Avenue Gaston Berger<br>
+            13625 Aix-en-Provence Cedex 01
+        </address>
     </footer>
-</body>
 
+    <!-- Ancrage Retour Haut -->
+    <a href="#top" class="back-to-top" id="backToTopBtn" title="Retour en haut">&uarr;</a>
+
+  <script src="../js/menu-toggle.js"></script>
+  <script src="../js/select-theme.js"></script>
+
+</body>
 </html>
