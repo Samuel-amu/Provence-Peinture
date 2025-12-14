@@ -1,75 +1,110 @@
-<!-- Mettre les bons chemins d'accès dans le nav ../html/ -->
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provence & Peinture</title>
     <meta name="description" content="Le site dédié aux peintures emblématiques de la Provence.">
-    <title> Provence & Peinture</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <meta property="og:title" content="Provence & Peinture">
+    <meta property="og:description" content="Le site dédié aux peintures emblématiques de la Provence.">
+    <meta property="og:image" content="https://samuel-amu.github.io/Provence-Peinture/images/logo.png">
+    <meta property="og:url" content="https://samuel-amu.github.io/Provence-Peinture/index.html">
+    <meta property="og:type" content="website">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
+<body id="top">
+
     <header>
-        <p>Provence & Peinture</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="./html/peintres.html">Peintres</a></li>
-                <li><a href="styles.html">Styles</a></li>
-                <li><a href="./html/lieu-provence.html">Lieux</a></li>
-                <li><a href="video.html">Vidéo</a></li>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="../images/logo.png" alt="Logo Provence" class="logo-img">
+                <span>Provence & Peinture</span>
+            </div>
+            <button id="theme-toggle" class="btn">🌙</button>
+            <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="html/peintres.html">Peintres</a></li>
+                <li><a href="html/styles.html">Styles</a></li>
+                <li><a href="html/lieux.html">Lieux</a></li>
+                <li><a href="html/video.html">Vidéo</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
 
-        <h1>L'Art et la Provence</h1>
-        <p>Explorez comment les paysages, les couleurs et la lumière du sud de la France ont inspiré les plus grands
-            maîtres de la peinture.</p>
+        <section>
+            <h1>L'Art et la Provence</h1>
+            <p>Explorez comment les paysages, les couleurs et la lumière du sud de la France ont inspiré les plus grands maîtres de la peinture.</p>
+        </section>
 
-        <h3>Explorer les sections</h3>
+        <h2>Explorer les sections</h2>
 
+        <div class="gallery-grid">
 
-        <!-- Les Peintres -->
-        <div class="section-cards">
-            <h2>Les Peintres</h2>
-            <p>Plongez dans la vie et l'œuvre de Cézanne, Van Gogh, Matisse, Picasso et Signac, et découvrez leur lien
-                indéfectible avec la Provence.</p>
-            <button type="button">Voir les peintres →</button>
-        </div>
+            <!-- Les Peintres -->
+            <article class="card">
+                <div class="card-content">
+                    <h3>Les Peintres</h3>
+                    <p>Plongez dans la vie et l'œuvre de Cézanne, Van Gogh, Matisse, Picasso et Signac, et découvrez leur lien indéfectible avec la Provence.</p>
+                    <a href="html/peintres.html" class="btn">Voir les peintres →</a>
+                </div>
+            </article>
 
-        <!-- Les Styles -->
-        <div class="section-cards">
-            <h2>Les Styles</h2>
-            <p>Visitez les lieux emblématiques : de la Montagne Sainte-Victoire au port de Saint-Tropez, suivez les
-                traces des peintres.</p>
-            <button type="button">Voir les styles →</button>
-        </div>
+            <!-- Les Styles -->
+            <article class="card">
+                <div class="card-content">
+                    <h3>Les Styles</h3>
+                    <p>Du Post-impressionnisme au Fauvisme, comprenez comment la région a été le berceau de révolutions artistiques majeures.</p>
+                    <a href="html/styles.html" class="btn">Voir les styles →</a>
+                </div>
+            </article>
 
-        <!-- Les Lieux -->
-        <div class="section-cards">
-            <h2>Les Lieux</h2>
-            <p>Visitez les lieux emblématiques : de la Montagne Sainte-Victoire au port de Saint-Tropez, suivez les
-                traces des peintres.</p>
-            <button type="button">Voir les lieux →</button>
-        </div>
+            <!-- Les Lieux -->
+            <article class="card">
+                <div class="card-content">
+                    <h3>Les Lieux</h3>
+                    <p>Visitez les lieux emblématiques : de la Montagne Sainte-Victoire au port de Saint-Tropez, suivez les traces des peintres.</p>
+                    <a href="html/lieux.html" class="btn">Voir les lieux →</a>
+                </div>
+            </article>
 
-        <!-- La Vidéo -->
-        <div class="section-cards">
-            <h2>La Vidéo</h2>
-            <p>Notre vidéo explicative résume l'impact de la Provence sur l'histoire de l'art moderne en quelques
-                minutes.</p>
-            <button type="button">Voir la vidéo →</button>
+            <!-- La Vidéo -->
+            <article class="card">
+                <div class="card-content">
+                    <h3>La Vidéo</h3>
+                    <p>Notre vidéo explicative résume l'impact de la Provence sur l'histoire de l'art moderne en quelques minutes.</p>
+                    <a href="html/video.html" class="btn">Voir la vidéo →</a>
+                </div>
+            </article>
+
         </div>
 
     </main>
-
+    
     <footer>
         <p>Projet de BUT Informatique - Les Peintures Provençales</p>
+        <address>
+            <strong>Académie d'Aix-Marseille</strong><br>
+            Avenue Gaston Berger<br>
+            13625 Aix-en-Provence Cedex 01
+        </address>
     </footer>
-</body>
+    
+    <a href="#top" class="back-to-top" id="backToTopBtn" title="Retour en haut">&uarr;</a>
 
+  <script src="js/menu-toggle.js"></script>
+  <script src="js/select-theme.js"></script>
+
+</body>
 </html>
