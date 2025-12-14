@@ -1,0 +1,39 @@
+/* -- HEADER -- */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: var(--bg-card);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* -- TITRES H2 -- */
+h2 {
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: 2rem;
+    margin: 3rem 0 2rem;
+    color: var(--text-main);
+}
+
+/* -- CARTES SECTIONS -- */
+.card {
+    border-top: 5px solid var(--btn-color);
+    text-align: center;
+    align-items: center;
+}
+
+.card-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+}
