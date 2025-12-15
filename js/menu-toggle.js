@@ -8,11 +8,19 @@ if (menuToggle) {
     });
 }
 
-window.onscroll = function () {
-    const currentScroll = document.body.scrollTop || document.documentElement.scrollTop;
+window.addEventListener('scroll', () => {
+    const currentScroll = window.scrollY || document.documentElement.scrollTop;
 
-    if (currentScroll > 100) backToTopBtn.classList.add("show");
-    else backToTopBtn.classList.remove("show");
+    if (backToTopBtn) {
+        if (currentScroll > 100) {
+            backToTopBtn.classList.add("show");
+            console.log("Scroll détecté : Bouton affiché");
+        } else {
+            backToTopBtn.classList.remove("show");
+        }
+    }
 
-    if (currentScroll > 50 && navLinks.classList.contains('active')) navLinks.classList.remove('active');
-}
+    if (currentScroll > 50 && navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+    }
+});
