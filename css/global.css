@@ -208,7 +208,7 @@ section p {
 }
 
 /* -- BACK TO TOP -- */
-.back-to-top {
+.top-btn {
     position: fixed; bottom: 20px; right: 20px;
     background-color: var(--text-main);
     color: var(--bg-color);
@@ -223,13 +223,13 @@ section p {
     transform: translateY(20px);
 }
 
-.back-to-top:hover { 
+.top-btn:hover { 
     background-color: var(--btn-color);
     transform: translateY(-3px);
     color: white;
 }
 
-.back-to-top.show {
+.top-btn.show {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
