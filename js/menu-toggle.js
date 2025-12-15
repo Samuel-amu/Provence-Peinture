@@ -14,7 +14,6 @@ window.addEventListener('scroll', () => {
     if (backToTopBtn) {
         if (currentScroll > 100) {
             backToTopBtn.classList.add("show");
-            console.log("Scroll détecté : Bouton affiché");
         } else {
             backToTopBtn.classList.remove("show");
         }
