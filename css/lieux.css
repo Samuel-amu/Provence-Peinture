@@ -30,14 +30,6 @@ header {
     object-position: center;
 }
 
-#cezanne img {
-    object-position: center;
-}
-
-#matisse img {
-    object-position: top;
-}
-
 .card-content {
     padding: 1.5rem;
     display: flex;
