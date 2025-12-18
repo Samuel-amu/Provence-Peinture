@@ -30,7 +30,7 @@ header {
     color: var(--text-main);
 }
 
-/* -- VIDÉO (16/9) -- */
+/* -- VIDÉO -- */
 .card-img iframe {
     width: 100%;
     height: auto;
