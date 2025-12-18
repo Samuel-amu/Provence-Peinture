@@ -23,7 +23,7 @@ Lien du site : https://samuel-amu.github.io/Provence-Peinture/
 │   ├── menu-toggle.js  # Gestion du menu burger (mobile) et du bouton "Retour haut".
 │   └── select-theme.js # Gestion du changement de thème (clair/sombre).
 └── images/             # Images du site.
-    └── logo.png        # Le logo du site.
+    └── logo.webp        # Le logo du site.
 
 
 # ✅ Respect des consignes et réalisations
