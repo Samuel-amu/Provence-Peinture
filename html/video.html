@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les Peintres de Provence</title>
-    <meta name="description" content="Découvrez les peintres emblématiques de la Provence.">
+    <title>La vidéo</title>
+    <meta name="description" content="Découvrez notre vidéo emblématique de l'IUT d'Aix-enProvence.">
     <link rel="icon" type="image/png" href="../images/logo.png">
 
-    <meta property="og:title" content="Les Peintres de Provence">
-    <meta property="og:description" content="Découvrez les peintres emblématiques de la Provence.">
+    <meta property="og:title" content="La vidéo">
+    <meta property="og:description" content="Découvrez notre vidéo emblématique de l'IUT d'Aix-enProvence.">
     <meta property="og:image" content="https://samuel-amu.github.io/Provence-Peinture/images/logo.png">
-    <meta property="og:url" content="https://samuel-amu.github.io/Provence-Peinture/html/peintres.html">
+    <meta property="og:url" content="https://samuel-amu.github.io/Provence-Peinture/html/video.html">
     <meta property="og:type" content="website">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,54 +44,49 @@
     <main>
 
         <section>
-            <h1>Les Peintres de Provence</h1>
-            <p>Découvrez les artistes emblématiques dont l'œuvre a été façonnée par la lumière et les paysages provençaux.</p>
+            <h1>La vidéo</h1>
+            <p>Découvrez notre vidéo emblématique de l'IUT d'Aix-enProvence.</p>
         </section>
 
         <div class="gallery-grid">
 
-            <!-- video -->
             <article class="card" id="video">
                 <div class="card-img">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/i9NPbvUbhGg?si=z98AqDEPBbXgY_yQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/i9NPbvUbhGg?si=z98AqDEPBbXgY_yQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="card-content">
                     <h2>Notre vidéo !</h2>
-                    <p>Découvrez une vidéo entièrement réalisée par nos soins, remplie de ses références multiples, voyagez à travers une immersion de peinture et découvrez des êtres exceptionnels qui nous permettent d'apprendre à réaliser des projets comme celui sous vos yeux ! N'hésitez pas à laisser un avis dans le formulaire juste en dessous de cette carte !</p>
+                    <p>écouvrez une vidéo entièrement réalisée par nos soins, remplie de ses références multiples, voyagez à travers une immersion de peinture et découvrez des êtres exceptionnels qui nous permettent d'apprendre à réaliser des projets comme celui sous vos yeux ! N'hésitez pas à laisser un avis dans le formulaire juste en dessous de cette carte !</p>
                 </div>
             </article>
 
-            <!-- forms -->
             <article class="card">
-
                 <div class="card-content">
                     <h2>Donnez votre avis !</h2>
-                <form action="mailto:sae.web@proton.me" method="post">
-                  <ul>
-                    <li>
-                      <label for="name">Nom&nbsp;:</label>
-                      <input type="text" id="name" name="user_name" />
-                    </li>
-                    <li>
-                      <label for="mail">E-mail&nbsp;:</label>
-                      <input type="email" id="mail" name="user_mail" />
-                    </li>
-                    <li>
-                      <label for="msg">Message&nbsp;:</label>
-                      <textarea id="msg" name="user_message"></textarea>
-                    </li>
-
-                    <div class="btn">
-                      <button type="submit">Envoyer le message</button>
-                    </div>
-                  </ul>
-                </form>
-                
+                    <form action="mailto:sae.web@proton.me" method="post">
+                        <ul>
+                            <li>
+                                <label for="name">Nom :</label>
+                                <input type="text" id="name" name="user_name" placeholder="Votre nom" required />
+                            </li>
+                            <li>
+                                <label for="mail">E-mail :</label>
+                                <input type="email" id="mail" name="user_mail" placeholder="votre@email.com" required />
+                            </li>
+                            <li>
+                                <label for="msg">Message :</label>
+                                <textarea id="msg" name="user_message" placeholder="Votre message..." required></textarea>
+                            </li>
+                            <li>
+                                <button type="submit" class="btn">Envoyer le message</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
             </article>
-
-
-
+        
         </div>
+
     </main>
 
     <footer>
@@ -102,12 +97,11 @@
             13625 Aix-en-Provence Cedex 01
         </address>
     </footer>
-
-    <!-- Ancrage Retour Haut -->
+    
     <a href="#top" class="top-btn" id="backToTopBtn" title="Retour en haut">&uarr;</a>
 
-  <script src="../js/menu-toggle.js"></script>
-  <script src="../js/select-theme.js"></script>
+    <script src="../js/menu-toggle.js"></script>
+    <script src="../js/select-theme.js"></script>
 
 </body>
 </html>
