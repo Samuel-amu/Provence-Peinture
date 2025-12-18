@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Peintres de Provence</title>
+    <meta name="description" content="Découvrez les peintres emblématiques de la Provence.">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+
+    <meta property="og:title" content="Les Peintres de Provence">
+    <meta property="og:description" content="Découvrez les peintres emblématiques de la Provence.">
+    <meta property="og:image" content="https://samuel-amu.github.io/Provence-Peinture/images/logo.png">
+    <meta property="og:url" content="https://samuel-amu.github.io/Provence-Peinture/html/peintres.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/video.css">
+</head>
+
+<body id="top">
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="../images/logo.png" alt="Logo Provence" class="logo-img">
+                <span>Provence & Peinture</span>
+            </div>
+            <button id="theme-toggle" class="btn">🌙</button>
+            <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="peintres.html">Peintres</a></li>
+                <li><a href="styles.html">Styles</a></li>
+                <li><a href="lieux.html">Lieux</a></li>
+                <li><a href="video.html" class="active">Vidéo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Les Peintres de Provence</h1>
+            <p>Découvrez les artistes emblématiques dont l'œuvre a été façonnée par la lumière et les paysages provençaux.</p>
+        </section>
+
+        <div class="gallery-grid">
+
+            <!-- video -->
+            <article class="card" id="video">
+                <div class="card-img">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/i9NPbvUbhGg?si=z98AqDEPBbXgY_yQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="card-content">
+                    <h2>Notre vidéo !</h2>
+                    <p>Découvrez une vidéo entièrement réalisée par nos soins, remplie de ses références multiples, voyagez à travers une immersion de peinture et découvrez des êtres exceptionnels qui nous permettent d'apprendre à réaliser des projets comme celui sous vos yeux ! N'hésitez pas à laisser un avis dans le formulaire juste en dessous de cette carte !</p>
+                </div>
+            </article>
+
+            <!-- forms -->
+            <article class="card">
+
+                <div class="card-content">
+                    <h2>Donnez votre avis !</h2>
+                <form action="mailto:sae.web@proton.me" method="post">
+                  <ul>
+                    <li>
+                      <label for="name">Nom&nbsp;:</label>
+                      <input type="text" id="name" name="user_name" />
+                    </li>
+                    <li>
+                      <label for="mail">E-mail&nbsp;:</label>
+                      <input type="email" id="mail" name="user_mail" />
+                    </li>
+                    <li>
+                      <label for="msg">Message&nbsp;:</label>
+                      <textarea id="msg" name="user_message"></textarea>
+                    </li>
+
+                    <div class="btn">
+                      <button type="submit">Envoyer le message</button>
+                    </div>
+                  </ul>
+                </form>
+                
+            </article>
+
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Projet de BUT Informatique - Les Peintures Provençales</p>
+        <address>
+            <strong>Académie d'Aix-Marseille</strong><br>
+            Avenue Gaston Berger<br>
+            13625 Aix-en-Provence Cedex 01
+        </address>
+    </footer>
+
+    <!-- Ancrage Retour Haut -->
+    <a href="#top" class="top-btn" id="backToTopBtn" title="Retour en haut">&uarr;</a>
+
+  <script src="../js/menu-toggle.js"></script>
+  <script src="../js/select-theme.js"></script>
+
+</body>
+</html>
