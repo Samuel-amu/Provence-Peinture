@@ -128,6 +128,7 @@ Lien du site : https://samuel-amu.github.io/Provence-Peinture/
 
 **Outils :** Utilisation de Git et GitHub pour le versionning et le suivi des modifications.
 
-prompt GPT :
-Corrige les fautes d'orthographes sans modifier la syntaxe ni la phrases
-Donne moi des peintres provençaux et un tableau 
+
+# Prompt IA :
+* "Corrige les fautes d'orthographes sans modifier la syntaxe ni les phrases"
+* "Donne moi des peintres provençaux et leurs tableaux"
